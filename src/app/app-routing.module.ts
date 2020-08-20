@@ -4,9 +4,9 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [];
 
 @NgModule({
+  exports: [RouterModule],
   imports: [RouterModule.forRoot(routes, {
     initialNavigation: 'enabled',
-})],
-  exports: [RouterModule],
+  })],
 })
 export class AppRoutingModule { }

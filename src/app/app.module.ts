@@ -5,14 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
+  declarations: [AppComponent],
+  bootstrap: [AppComponent],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    BrowserModule.withServerTransition({ appId: 'ideahub' }),
     AppRoutingModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent],
 })
 export class AppModule { }
